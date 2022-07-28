@@ -7,11 +7,11 @@ A simple lightweight DDNS-Updater written in NodeJS.
 Run following command
 
 ```
-  docker run -e http://example.com?password=123&username=test roodycode/dyndns
+  docker run -e DDNS_URL="http://example.com?password=123&username=test" roodycode/dyndns
 ```
 
 You can also set a custom checking interval by adding the following environment variable
 ```
-  -e DDNS_DDNS_CHECKING_INTERVAL=<seconds>
+  -e DDNS_CHECKING_INTERVAL=<seconds>
 ```
     
